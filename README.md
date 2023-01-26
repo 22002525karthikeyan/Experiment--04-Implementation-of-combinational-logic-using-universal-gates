@@ -65,10 +65,12 @@ endmodule
 ## Output:
 ## RTL
 ![](c1.png)
+
 ![](c2.png)
 
 ## Timing Diagram
 ![](c11.png)
+
 ![](c22.png)
 
 ## Result:
