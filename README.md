@@ -66,8 +66,10 @@ endmodule
 ## RTL
 ![](c1.png)
 ![](c2.png)
+
 ## Timing Diagram
 ![](c11.png)
 ![](c22.png)
+
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
