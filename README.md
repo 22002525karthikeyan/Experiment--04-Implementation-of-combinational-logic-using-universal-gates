@@ -26,18 +26,48 @@ NOR gate is actually a combination of two logic gates: OR gate followed by NOT g
 
 F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
-## Logic Diagram
 ## Procedure
+The input and output variables are allocated with letter symbols. The exact truth table that defines the required relationships between inputs and outputs is derived. The simplified Boolean function is obtained from each output. The logic diagram is drawn.
+
 ## Program:
-/*
+
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-## RTL realization
+
+Developed by: R.KARTHIKEYAN
+
+RegisterNumber: 22002525 
+
+```
+module cpmbine(a,b,c,d,f);
+input a,b,c,d;
+output f;
+wire p,q,r;
+assign p=(~c & b & a);
+assign q=(~d & c & c & a);
+assign r=(c & ~b & a);
+assign f=(~(~p & ~q & ~r));
+endmodule
+```
+```
+module combine1(a,b,c,d,f);
+input a,b,c,d;
+output f;
+wire p,q,r;
+assign p=(c & ~b & a);
+assign q=(d & ~c & a);
+assign r=(c & ~b & a);
+assign f=((p | q & |r));
+endmodule
+```
+
+
 
 ## Output:
 ## RTL
+![](c1.png)
+![](c2.png)
 ## Timing Diagram
+![](c11.png)
+![](c22.png)
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
